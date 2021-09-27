@@ -1,8 +1,9 @@
 version: "3"
 services:
-        tomcat:
-                build:
-                        context: "."
-                        dockerfile: "Dockerfile"
+        app:
+                image: img_1
                 ports:
                         - "8787:8080"
+                deploy:
+                        replicas: 2
+
